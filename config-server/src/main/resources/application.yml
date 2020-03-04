@@ -1,0 +1,21 @@
+  #微服务名 label分支类型 uri:git地址
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/1093445609/springcloud.git/
+          searchPaths:
+  #微服务中心地址
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+#微服务端口
+server:
+  port: 8030
