@@ -22,5 +22,5 @@ management:
       exposure:
         include: "*"
       cors:
-        allowed-methods: get
-        allowed-origins: "*"
+        #allowed-origins: *
+        allowed-methods: *
