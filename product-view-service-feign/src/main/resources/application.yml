@@ -12,7 +12,6 @@ spring:
     mode: html5
   zipkin:
     base-url: http://localhost:9411
-
 server:
   port: 8011
 #允许访问路径 才能访问/actuator/bus-refresh
@@ -24,3 +23,4 @@ management:
       cors:
         allowed-origins: "*"
         allowed-methods: "*"
+

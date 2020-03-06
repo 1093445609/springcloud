@@ -12,6 +12,7 @@ spring:
       enabled: true
       trace:
         enabled: true
+
   #rabbitmq配置
   rabbitmq:
     host: localhost

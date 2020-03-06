@@ -1,16 +1,12 @@
 package how2j.springcloud.controller;
-
-
 import how2j.springcloud.pojo.Product;
 import how2j.springcloud.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
@@ -25,7 +21,6 @@ public class ProductController {
     String version;
     @Autowired
     ProductService productService;
-
     @RequestMapping("/products")
     public Object products(Model m) {
         List<Product> ps = productService.listProducts();
@@ -33,5 +28,7 @@ public class ProductController {
         m.addAttribute("ps", ps);
         return "products";
     }
+
+
 
 }
