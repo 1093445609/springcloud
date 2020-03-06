@@ -5,6 +5,7 @@ import how2j.springcloud.pojo.Product;
 import how2j.springcloud.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +19,7 @@ import java.util.List;
  * @Date 2020/3/4 0004
  **/
 @Controller
+@RefreshScope
 public class ProductController {
     @Value("${version}")
     String version;
@@ -31,4 +33,5 @@ public class ProductController {
         m.addAttribute("ps", ps);
         return "products";
     }
+
 }

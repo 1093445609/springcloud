@@ -1,3 +1,5 @@
+#profile表示查找的文件为微服务名加上"-dev"
+#bus服务开启
 spring:
   cloud:
     config:
@@ -6,6 +8,19 @@ spring:
       discovery:
         enabled:  true
         serviceId:  config-server
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  #rabbitmq配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+
 #eureka 注册服务中心配置到这个文件里
 eureka:
   instance:

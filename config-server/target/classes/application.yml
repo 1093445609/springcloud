@@ -7,8 +7,9 @@ spring:
       label: master
       server:
         git:
-          uri: https://github.com/1093445609/springcloud.git/
+          uri: https://github.com/1093445609/springcloud_version.git
           searchPaths:
+
   #微服务中心地址
 eureka:
   instance:
