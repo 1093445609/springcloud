@@ -8,10 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="product-view-service-ribbon" />
+        <module name="product-view-service-feign02" />
         <module name="eureka-server" />
         <module name="product-view-service-feign" />
         <module name="config-server" />
+        <module name="turbine" />
         <module name="product-data-service3" />
+        <module name="hystrix-dashboard" />
         <module name="product-data-service" />
         <module name="product-data-service2" />
       </profile>
@@ -24,11 +27,14 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="hystrix-dashboard" options="-parameters" />
       <module name="product-data-service" options="-parameters" />
       <module name="product-data-service2" options="-parameters" />
       <module name="product-data-service3" options="-parameters" />
       <module name="product-view-service-feign" options="-parameters" />
+      <module name="product-view-service-feign02" options="-parameters" />
       <module name="product-view-service-ribbon" options="-parameters" />
+      <module name="turbine" options="-parameters" />
     </option>
   </component>
 </project>

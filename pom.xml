@@ -14,7 +14,10 @@
         <module>product-data-service3</module>
         <module>product-view-service-ribbon</module>
         <module>product-view-service-feign</module>
+        <module>product-view-service-feign02</module>
         <module>config-server</module>
+        <module>hystrix-dashboard</module>
+        <module>turbine</module>
     </modules>
     <packaging>pom</packaging>
     <!--引入-->
