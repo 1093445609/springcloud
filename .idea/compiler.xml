@@ -17,6 +17,7 @@
         <module name="hystrix-dashboard" />
         <module name="product-data-service" />
         <module name="product-data-service2" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +36,7 @@
       <module name="product-view-service-feign02" options="-parameters" />
       <module name="product-view-service-ribbon" options="-parameters" />
       <module name="turbine" options="-parameters" />
+      <module name="zuul" options="-parameters" />
     </option>
   </component>
 </project>
