@@ -28,7 +28,7 @@ public class ProductService {
        // return ps;
         return  productClientFeign.listProdcuts();
     }
-
+    //回滚异常
     public  List<Product> productClientFeignHystrix(){
         List<Product> result = new ArrayList<>();
         result.add(new Product(0,"产品数据微服务不可用",0));

@@ -8,16 +8,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="product-view-service-ribbon" />
-        <module name="product-view-service-feign02" />
+        <module name="zuul" />
         <module name="eureka-server" />
         <module name="product-view-service-feign" />
         <module name="config-server" />
         <module name="turbine" />
-        <module name="product-data-service3" />
+        <module name="product-view-service-feign02" />
         <module name="hystrix-dashboard" />
-        <module name="product-data-service" />
+        <module name="product-data-service3" />
         <module name="product-data-service2" />
-        <module name="zuul" />
+        <module name="product-data-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

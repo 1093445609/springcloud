@@ -1,3 +1,4 @@
+~~~~~~~~
 # springcloud
        依次启动微服务 先启动服务中心eureka-server 
        再启动配置服务器 config-server
@@ -67,3 +68,4 @@ produce-service-zuul(网关): 8022
   8.读取dev http://localhost:8030/version/env http://localhost:8011/actuator/env/ 等/*/dev
   9.文档,随便写的: http://localhost:8001/swagger-ui.html
 
+~~~~~~~~

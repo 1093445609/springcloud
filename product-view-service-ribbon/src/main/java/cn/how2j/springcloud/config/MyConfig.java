@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
  **/
 @Configuration
 public class MyConfig {
-
+//通过 @LoadBalanced 注解开启均衡负载能⼒。
 
     @Bean
     @LoadBalanced

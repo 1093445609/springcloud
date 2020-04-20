@@ -20,7 +20,7 @@ management:
     web:
       exposure:
         include: "*"
-      cors:
+      cors:               #跨域
         allowed-origins: "*"
         allowed-methods: "*"
 

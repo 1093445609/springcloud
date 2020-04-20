@@ -8,7 +8,7 @@ spring:
       discovery:
         enabled:  true
         serviceId:  config-server
-    bus:
+    bus:              #bus 消息通知
       enabled: true
       trace:
         enabled: true
